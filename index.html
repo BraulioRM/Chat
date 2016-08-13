@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"   ng-app="chat">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+
+<body>
+
+ <chat></chat>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+
+    <!--enlazamos archivos a vista-->
+    <script src="app/app.js"></script>
+    <script src="app/factory/factory.js"></script>
+    <script src="app/chat_component/chat_component.js"></script>
+
+<!-- PAra el acoplamiento del nuevo firebase
+
+1- pones el link del nuevo firebase
+2-pones el link del nuevo angular firebase
+3- anotas en el index la información de la nueva base de datos
+
+XXXX: YYY
+XXX:YYY
+
+4- Cambias la referencia del link del chat en factory
+firebase().database().ref()
+Se supone que esto te referencia a la base de datos del index.
+-->
+
+
+
+</body>
+</html>    
